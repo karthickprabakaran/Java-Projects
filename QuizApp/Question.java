@@ -10,13 +10,10 @@ public class Question {
     private String opt4;
     private String answer;
 
-
-    Question(){
-
+    // Make constructor public if needed
+    public Question() {
     }
 
-
-    
     public int getId() {
         return id;
     }
@@ -59,7 +56,4 @@ public class Question {
     public void setAnswer(String answer) {
         this.answer = answer;
     }
-
-
-    
 }

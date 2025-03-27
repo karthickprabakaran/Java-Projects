@@ -1,9 +1,8 @@
 package QuizApp;
 
 public class QuestionService {
-    
-    Question[] questions = new Question[5];
 
-    
-
+    public void displayQuestions() { // Fixed the method name
+        System.out.println("In the display questions");
+    }
 }
