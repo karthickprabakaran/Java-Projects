@@ -11,11 +11,19 @@ public class Question {
     private String answer;
 
     // Make constructor public if needed
-    public Question() {
-    }
+    
 
     public int getId() {
         return id;
+    }
+    public Question(int id, String question, String opt1, String opt2, String opt3, String opt4, String answer) {
+        this.id = id;
+        this.question = question;
+        this.opt1 = opt1;
+        this.opt2 = opt2;
+        this.opt3 = opt3;
+        this.opt4 = opt4;
+        this.answer = answer;
     }
     public void setId(int id) {
         this.id = id;
@@ -28,6 +36,14 @@ public class Question {
     }
     public String getOpt1() {
         return opt1;
+    }
+    @Override
+    public String toString() {
+        return "Question [id=" + id + ", question=" + question + ", opt1=" + opt1 + ", opt2=" + opt2 + ", opt3=" + opt3
+                + ", opt4=" + opt4 + ", answer=" + answer + ", getId()=" + getId() + ", getQuestion()=" + getQuestion()
+                + ", getOpt1()=" + getOpt1() + ", getOpt2()=" + getOpt2() + ", getOpt3()=" + getOpt3() + ", getOpt4()="
+                + getOpt4() + ", getAnswer()=" + getAnswer() + ", getClass()=" + getClass() + ", hashCode()="
+                + hashCode() + ", toString()=" + super.toString() + "]";
     }
     public void setOpt1(String opt1) {
         this.opt1 = opt1;
