@@ -1,13 +1,9 @@
 package QuizApp;
 
-class Main{ 
-
-public static void main (String[] args)
-{
-    QuestionService service = new QuestionService();
-
-    service.getQuestion();
+class Main{
 
     
-}
+    public static void main(String[] args) {
+        System.out.println("Hello");
+    }
 }

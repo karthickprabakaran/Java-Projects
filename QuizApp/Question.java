@@ -1,17 +1,19 @@
 package QuizApp;
 
 public class Question {
-
+    
     private int id;
     private String question;
     private String opt1;
     private String opt2;
     private String opt3;
     private String opt4;
-    private String correct;
+    private String answer;
 
 
+    Question(){
 
+    }
 
 
     
@@ -51,14 +53,13 @@ public class Question {
     public void setOpt4(String opt4) {
         this.opt4 = opt4;
     }
-    public String getCorrect() {
-        return correct;
+    public String getAnswer() {
+        return answer;
     }
-    public void setCorrect(String correct) {
-        this.correct = correct;
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
-    
 
     
 }
