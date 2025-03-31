@@ -1,4 +1,5 @@
 package QuizApp;
+import java.util.Scanner;
 
 public class QuestionService {
     Question[] questions = new Question[5];
@@ -11,10 +12,25 @@ public class QuestionService {
         questions[4] = new Question(0, "Which is the Slowest language", "java", "python", "java Script", "Go", "Java");
 
     }
-    public void displayQuestions() { // Fixed the method name
+    public void playQuiz() { // Fixed the method name
+        int i = 0;
+        String selection[] = new String[5];
         for(Question q: questions)
         {
-            System.out.println(q);
+            System.out.println("Question No: " + q.getId());
+            System.out.println(q.getQuestion());
+            System.out.println(q.getOpt1());
+            System.out.println(q.getOpt2());
+            System.out.println(q.getOpt3());
+            System.out.println(q.getOpt4());
+            Scanner sc = new Scanner(System.in);
+            selection[i]  = sc.nextLine();
+            i++;
+        }
+
+        for(String s: selection)
+        {
+            System.out.println(s);
         }
     }
 }
